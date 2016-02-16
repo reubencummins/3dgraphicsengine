@@ -66,8 +66,7 @@ namespace GraphicsEngine
             spriteBatch = new SpriteBatch(GraphicsDevice);
             sfont = Content.Load<SpriteFont>("debug");
 
-            AddModel(new SimpleModel("wall0", "wall", new Vector3(0, 0, -10)));
-            AddModel(new SimpleModel("ball0", "ball", new Vector3(0, 2.5f, -20)));
+            AddModel(new DirectionalLight("no", "house", new Vector3(0, 0, 0)));
         }
 
         

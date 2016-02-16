@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using GraphicsEngine;
 
 namespace Sample
 {
@@ -65,6 +66,7 @@ namespace Sample
 
             base.Update();
         }
+
         public override void Draw(Camera camera)
         {
             foreach (ModelMesh mesh in Model.Meshes)
@@ -84,5 +86,9 @@ namespace Sample
                 base.Draw(camera);
             }
         }
+
+
+
+
     }
 }
